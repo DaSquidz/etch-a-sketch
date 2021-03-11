@@ -60,7 +60,7 @@ hr {
 
 @media (max-width: 650px) {
     .settings {
-        margin: auto 5vw auto 5vw;
+        margin: auto 5vw 0.3vh 5vw;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -76,8 +76,9 @@ hr {
         margin: 1vh 8px 1vh 8px;
         border-radius: 15px;
         color: #eef0e3;
-        font-size: 2vw;
+        font-size: 3vh;
         cursor: pointer;
-        place-self: stretch;
+        align-self: stretch;
+        height: 80%;
     }
 }
