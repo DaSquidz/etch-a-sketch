@@ -13,6 +13,7 @@ background-position: 0 0,20px 20px;
 .title {
     text-align: center;
     color: #442c3a;
+    font-size: 2.5vw;
 }
 
 hr {
@@ -31,6 +32,18 @@ hr {
     border: 2px solid #442c3a;
     border-radius: 15px;
     color: #eef0e3;
-    font-size: 3.5vw;
+    font-size: 2vw;
     cursor: pointer;
+}
+
+#grid {
+    display: grid;
+    border: 2px solid #442c3a;
+    max-width: 50vh;
+    min-height: 50vh;
+    margin: 2vh auto;
+}
+
+.grid-square {
+    border: 1px solid #442c3a;
 }
