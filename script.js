@@ -10,6 +10,7 @@ window.addEventListener("load", LoadGrid(16));
 changeSizeButton.addEventListener("click", ChangeSize);
 blackButton.addEventListener("click", ChooseBlackColor);
 rainbowButton.addEventListener("click", ChooseRainbowColor);
+clearButton.addEventListener("click", ClearColors);
 
 function LoadGrid(dim){
     grid.style.gridTemplateColumns = `repeat(${dim}, 1fr)`;
@@ -69,7 +70,13 @@ function RandomColor(){
 function ChooseBlackColor(){
     currentColor = "black";
 }
-
 function ChooseRainbowColor(){
     currentColor = "rainbow";
+}
+function ClearColors(){
+    let gridSquares = document.getElementsByClassName("grid-square");
+    let i = gridSquares.length;
+    while(i--){
+        gridSquares[i].style.backgroundColor = "transparent";
+    }
 }
