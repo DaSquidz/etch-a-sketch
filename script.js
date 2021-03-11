@@ -38,6 +38,6 @@ function ClearCurrentGrid(){
     let gridSquares = document.getElementsByClassName("grid-square");
     let i = gridSquares.length;
     while(i--){
-        gridSquares[i].style.backgroundColor = "transparent";
+        gridSquares[i].remove();
     }
 }
