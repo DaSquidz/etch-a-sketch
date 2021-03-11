@@ -7,7 +7,11 @@ function LoadGrid(dim){
     for(let i = 0; i < dim * dim; i++){
         const gridSquare = document.createElement("div");
         gridSquare.classList = "grid-square";
-        //gridSquare.addEventListener("mouseover", changeColor);
+        gridSquare.addEventListener("mouseover", ChangeColor);
         grid.appendChild(gridSquare);
     }
+}
+
+function ChangeColor(square) {
+    square.target.style.backgroundColor = "black";
 }
