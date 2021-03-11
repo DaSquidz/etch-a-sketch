@@ -2,13 +2,14 @@ const changeSizeButton = document.getElementById("change-size-btn");
 const clearButton = document.getElementById("clear");
 const blackButton = document.getElementById("black");
 const rainbowButton = document.getElementById("rainbow");
-const chooseColorButton = document.getElementById("choose-color");
 const grid = document.getElementById("grid");
 
 let currentColor = "black";
 
 window.addEventListener("load", LoadGrid(16));
 changeSizeButton.addEventListener("click", ChangeSize);
+blackButton.addEventListener("click", ChooseBlackColor);
+rainbowButton.addEventListener("click", ChooseRainbowColor);
 
 function LoadGrid(dim){
     grid.style.gridTemplateColumns = `repeat(${dim}, 1fr)`;
@@ -22,7 +23,15 @@ function LoadGrid(dim){
 }
 
 function ChangeColor(e) {
-    e.target.style.backgroundColor = "black";
+
+
+
+    if(currentColor === "black") e.target.style.backgroundColor = "black";
+    if(currentColor === "rainbow") {
+        let randomColor = "#ff0000";
+        randomColor = RandomColor();
+        e.target.style.backgroundColor = randomColor;
+    };
 }
 
 function ChangeSize(){
@@ -46,4 +55,21 @@ function ClearCurrentGrid(){
     while(i--){
         gridSquares[i].remove();
     }
+}
+
+function RandomColor(){
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+function ChooseBlackColor(){
+    currentColor = "black";
+}
+
+function ChooseRainbowColor(){
+    currentColor = "rainbow";
 }

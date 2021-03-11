@@ -31,6 +31,7 @@ hr {
     border-color: #442c3a;
     background-color: #5c5b8e;
     border: 2px solid #442c3a;
+    margin: auto 10px auto 8px;
     border-radius: 15px;
     color: #eef0e3;
     font-size: 2vw;
@@ -53,6 +54,6 @@ hr {
 .settings {
     margin: auto 15vw auto 15vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
 }
