@@ -35,6 +35,7 @@ hr {
     color: #eef0e3;
     font-size: 2vw;
     cursor: pointer;
+    place-self: stretch;
 }
 
 #grid {
@@ -47,4 +48,11 @@ hr {
 
 .grid-square {
     border: 1px solid #442c3a;
+}
+
+.settings {
+    margin: auto 15vw auto 15vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
 }

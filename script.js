@@ -1,5 +1,11 @@
 const changeSizeButton = document.getElementById("change-size-btn");
-const grid = document.getElementById("grid")
+const clearButton = document.getElementById("clear");
+const blackButton = document.getElementById("black");
+const rainbowButton = document.getElementById("rainbow");
+const chooseColorButton = document.getElementById("choose-color");
+const grid = document.getElementById("grid");
+
+let currentColor = "black";
 
 window.addEventListener("load", LoadGrid(16));
 changeSizeButton.addEventListener("click", ChangeSize);
