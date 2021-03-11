@@ -1,0 +1,16 @@
+:root {
+    --main-bg-color: #adc2cf;
+    --secondary-bg-color: #8490b4;
+}
+
+body {
+    background-color: var(--main-bg-color);
+background-image:  radial-gradient(var(--secondary-bg-color) 1px, transparent 1px), radial-gradient(var(--secondary-bg-color) 1px, var(--main-bg-color) 1px);
+background-size: 40px 40px;
+background-position: 0 0,20px 20px;  
+}
+
+.title {
+    text-align: center;
+    color: #442c3a;
+}
