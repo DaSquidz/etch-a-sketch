@@ -14,3 +14,23 @@ background-position: 0 0,20px 20px;
     text-align: center;
     color: #442c3a;
 }
+
+hr {
+    width: 85vw;
+    background-color: #442c3a;
+}
+
+#change-size {
+    display: flex;
+    justify-content: center;
+}
+
+#change-size-btn {
+    border-color: #442c3a;
+    background-color: #5c5b8e;
+    border: 2px solid #442c3a;
+    border-radius: 15px;
+    color: #eef0e3;
+    font-size: 3.5vw;
+    cursor: pointer;
+}
