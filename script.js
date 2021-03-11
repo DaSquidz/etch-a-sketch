@@ -37,9 +37,8 @@ function ChangeColor(e) {
 
 function ChangeSize(){
     let size = prompt("Enter your desired size(1-64)");
-    if(size !== null){
-        size = parseInt(size);
-    }
+    if(size === null) return;
+    size = parseInt(size);
     if (size < 1 || size > 64 || Number.isNaN(size)){
         alert("Invalid size, try again");
         ChangeSize();
